@@ -3,148 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自我介绍</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>个人简历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
             color: #333;
         }
-        section {
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
-        h2 {
-            color: #007bff;
+        .section {
+            margin-bottom: 20px;
         }
-        ul {
-            list-style-type: none;
+        .skills ul {
+            list-style: none;
             padding: 0;
         }
-        li {
-            background: #e9ecef;
-            margin: 5px 0;
-            padding: 10px;
+        .skills li {
+            background: #4CAF50;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
             border-radius: 5px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #0056b3;
+            margin: 5px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>于泽淼个人介绍</h1>
-</header>
-
 <div class="container">
-    <section>
+    <h1>个人简历</h1>
+    <img src="个人网站.jpg"" alt="个人网页"> <!-- 替换为你的照片路径 -->
+    
+    <div class="section personal-info">
         <h2>个人信息</h2>
-        <p>姓名：于泽淼	                
-           性别：男	            
-           出生年月：1999.4.1
-           籍贯： 山西省大同市	        
-           政治面貌：中共党员	   
-           年级：18级
-           专业：计算机科学与技术        
-           学位：工学学士	        
-           曾任职务：团支书
-           电话：15535293083            
-           电子邮箱：2512660343@qq.com
-</p >
-    </section>
+        <p><strong>姓名：</strong>于泽淼</p>
+        <p><strong>电话：</strong>15535293083</p>
+        <p><strong>邮箱：</strong>zemiaoyuzemiaoyu@LN.hk</p>
+        <p><strong>地址：</strong>山西省大同市平城区</p>
+    </div>
 
-    <section>
-        <h2>职业经历</h2>
+    <div class="section education">
+        <h2>兴趣爱好</h2>
+        <h3>钢琴唱歌围棋</h3>
+        <p>所学专业</p>
+        <p>岭南大学硕士在读，计算机科学与技术</p>
+    </div>
+
+    <div class="section work-experience">
+        <h2>工作经历</h2>
+        <h3>字节跳动公司</h3>
+        <p><strong>软件工程师</strong> | 2020年6月 - 至今</p>
         <ul>
-            <li>
-                <strong>[腾讯集团]</strong> - [大数据工程师] <br>
-                [2022] - [2023] <br>
-                <em>[大数据算法开发与分析]</em>
-            </li>
-            <li>
-                <strong>[字节跳动]</strong> - [游戏引擎开发工程师] <br>
-                [2023] - [2024] <br>
-                <em>[游戏引擎测试与即时演算]</em>
-            </li>
+            <li>负责开发和维护企业级应用程序。</li>
+            <li>参与系统设计和架构讨论。</li>
+            <li>优化代码性能，提高系统稳定性。</li>
         </ul>
-    </section>
-
-    <section>
-        <h2>技能与兴趣特长</h2>
+        
+        <h3>实习生</h3>
+        <p>腾讯科技公司 | 2019年6月 - 2019年9月</p>
         <ul>
-            <li>[编程与算法]</li>
-            <li>[pr.ps.ae视频后期]</li>
-            <li>[唱歌，弹钢琴]</li>
-            <li>[围棋，篮球]</li>
+            <li>协助团队进行软件测试和调试。</li>
+            <li>参与前端开发，提升用户体验。</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>项目经历</h2>
+    <div class="section skills">
+        <h2>技能</h2>
         <ul>
-            <li>
-                <strong>[基于Arduino和wifi模块的室内火灾预警系统]</strong> - [火灾预警自动报警] <br>
-                <em>[Arduino]</em>
-            </li>
-            <li>
-                <strong>[基于Python的通过识别语音查找图片]</strong> - [通过语音识别查找对应图片] <br>
-                <em>[python, 数莓派]</em>
-            </li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>SQL</li>
+            <li>React</li>
+            <li>Django</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>联系我</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-            <label for="name">姓名:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="section projects">
+        <h2>项目经验</h2>
+        <h3>个人博客网站</h3>
+        <p>使用 Django 和 React 开发的个人博客，支持用户注册、登录、发表文章等功能。</p>
+        
+        <h3>在线购物网页</h3>
+        <p>开发一个在线购物平台，使用 Node.js 和 MongoDB，支持商品浏览、购物车和订单管理。</p>
+    </div>
 
-            <label for="email">邮箱:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">信息:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <input type="submit" value="发送信息">
-        </form>
-    </section>
+    <div class="section hobbies">
+        <h2>其它爱好</h2>
+        <p>编程、音乐、旅行、阅读</p>
+    </div>
 </div>
 
 </body>
